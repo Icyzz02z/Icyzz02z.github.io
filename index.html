@@ -1,31 +1,163 @@
-<Doctype! html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Inventory Table</title>
+  <meta charset="UTF-8">
+  <title>Inventory and Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #a1a2a3;
+      color: white;
+    }
+
+    .yellow {
+      background-color: #f7e37e;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .gray {
+      background-color: #f0f0f0;
+    }
+
+    form {
+      max-width: 500px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #a1a2a3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #8f9091;
+    }
+
+    small {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-<style>
-        table{
-            border-collapse: collapse;
-            width:100%
-        }
-        th{
-            background-color: rgb(68, 45, 69);
-        }
-        td{
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align:center
-        }
-    </style>
+<body>
 
-    <body>
+  <h2>Inventory Systems</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Supplier</th>
+        <th>Date</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10001</td>
+        <td>Boy Bawang Adobo (pc)</td>
+        <td>1000</td>
+        <td rowspan="8" class="yellow">KSK</td>
+        <td rowspan="2">5/14/2019</td>
+        <td rowspan="8"><img src="BoyBawang.png" alt="Boy Bawang package" width="200"></td>
+      </tr>
+      <tr>
+        <td>10002</td>
+        <td>Boy Bawang Adobo (pack)</td>
+        <td>200</td>
+      </tr>
+      <tr class="gray">
+        <td>10003</td>
+        <td>Boy Bawang Garlic (pc)</td>
+        <td>3000</td>
+        <td rowspan="2">5/15/2019</td>
+      </tr>
+      <tr class="gray">
+        <td>10004</td>
+        <td>Boy Bawang Adobo (pack)</td>
+        <td class="red">150</td>
+      </tr>
+      <tr>
+        <td>10005</td>
+        <td>Boy Bawang Spicy (pc)</td>
+        <td>4000</td>
+        <td rowspan="2">5/16/2019</td>
+      </tr>
+      <tr>
+        <td>10006</td>
+        <td>Boy Bawang Spicy (pc)</td>
+        <td>4000</td>
+      </tr>
+      <tr class="gray">
+        <td>10007</td>
+        <td>Boy Bawang Spicy Garlic (pack)</td>
+        <td>240</td>
+        <td rowspan="2">5/17/2019</td>
+      </tr>
+      <tr class="gray">
+        <td>10008</td>
+        <td>Boy Bawang Garlic (pack)</td>
+        <td>210</td>
+      </tr>
+    </tbody>
+  </table>
 
-        <h2>Inventory Systems</h2>
-        <table>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-            </tr>
-        </table>
+  <h2>Contact Form</h2>
+  <form>
+    <label for="name">Your Name*</label>
+    <input type="text" id="name" name="name" required>
 
-    </body>
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contact">Contact No.*</label>
+    <input type="tel" id="contact" name="contact" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <small>* Required fields</small>
+    <button type="submit">Send</button>
+  </form>
+
+</body>
+</html>
