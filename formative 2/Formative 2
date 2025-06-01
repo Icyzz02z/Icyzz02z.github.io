@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="external_registration.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <link rel="stylesheet" href="external_registration.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Employee Registration Form</h2>
+        <h4>Please fill out the required information</h4>
+        <form action="#" method="post">
+            <!-- Full Name -->
+            <label for="fullname">Full Name*</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth*</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Gender -->
+            <label for="gender">Gender*</label>
+            <select id="gender" name="gender" required>
+                <option value="">-SELECT-</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Email -->
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Department -->
+            <label for="department">Department*</label>
+            <input type="text" id="department" name="department" required>
+
+            <!-- Applied Position -->
+            <label for="jobtitle">Applied Position*</label>
+            <input type="text" id="jobtitle" name="jobtitle" required>
+
+            <!-- Earliest Possible Hire Date -->
+            <label for="hireDate">Earliest Possible Hire Date</label>
+            <input type="date" id="hireDate" name="hireDate">
+
+            <!-- Emergency Contact Name -->
+            <label for="emergencyName">Emergency Contact Name</label>
+            <input type="text" id="emergencyName" name="emergencyName">
+
+            <!-- Emergency Contact Phone -->
+            <label for="emergencyPhone">Emergency Contact Phone</label>
+            <input type="tel" id="emergencyPhone" name="emergencyPhone">
+
+            <!-- Cover Letter -->
+            <label for="coverLetter">Cover Letter</label>
+            <textarea id="coverLetter" name="coverLetter" rows="4"></textarea>
+
+            <!-- Resume Upload -->
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume">
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
