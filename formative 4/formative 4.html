@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="external_registration.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-3">Employee Registration Form</h2>
+                <h5 class="text-center text-muted mb-4">Please fill out the required information</h5>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Full Name*</label>
+                        <input type="text" id="fullname" name="fullname" class="form-control" required>
+                    </div>
+
+                    <!-- Date of Birth -->
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of Birth*</label>
+                        <input type="date" id="dob" name="dob" class="form-control" required>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender*</label>
+                        <select id="gender" name="gender" class="form-select" required>
+                            <option value="">-SELECT-</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+
+                    <!-- Department -->
+                    <div class="mb-3">
+                        <label for="department" class="form-label">Department*</label>
+                        <input type="text" id="department" name="department" class="form-control" required>
+                    </div>
+
+                    <!-- Applied Position -->
+                    <div class="mb-3">
+                        <label for="jobtitle" class="form-label">Applied Position*</label>
+                        <input type="text" id="jobtitle" name="jobtitle" class="form-control" required>
+                    </div>
+
+                    <!-- Earliest Possible Hire Date -->
+                    <div class="mb-3">
+                        <label for="hireDate" class="form-label">Earliest Possible Hire Date</label>
+                        <input type="date" id="hireDate" name="hireDate" class="form-control">
+                    </div>
+
+                    <!-- Emergency Contact Name -->
+                    <div class="mb-3">
+                        <label for="emergencyName" class="form-label">Emergency Contact Name</label>
+                        <input type="text" id="emergencyName" name="emergencyName" class="form-control">
+                    </div>
+
+                    <!-- Emergency Contact Phone -->
+                    <div class="mb-3">
+                        <label for="emergencyPhone" class="form-label">Emergency Contact Phone</label>
+                        <input type="tel" id="emergencyPhone" name="emergencyPhone" class="form-control">
+                    </div>
+
+                    <!-- Cover Letter -->
+                    <div class="mb-3">
+                        <label for="coverLetter" class="form-label">Cover Letter</label>
+                        <textarea id="coverLetter" name="coverLetter" class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <!-- Resume Upload -->
+                    <div class="mb-4">
+                        <label for="resume" class="form-label">Resume</label>
+                        <input type="file" id="resume" name="resume" class="form-control">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
