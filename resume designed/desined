@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Resume - Benj Andrew Giron</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        h1 {
+            margin-top: 0;
+            color: #007acc;
+        }
+
+        h2 {
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        /* Profile Table */
+        table {
+            width: 100%;
+        }
+
+        td img {
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Contact Info */
+        p {
+            margin: 5px 0;
+        }
+
+        /* Links */
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <img src="Media.jfif" alt="Benj Giron Photo" width="150" height="150">
+                </td>
+                <td style="padding-left: 20px;">
+                    <h1>Benj Andrew Giron</h1>
+                    <p><strong>Email:</strong> <a href="mailto:benjaminalexander@gmail.com">benjaminalexander@gmail.com</a></p>
+                    <p><strong>Phone:</strong> 09568404927</p>
+                    <p><strong>Address:</strong> 101 Sanchez St, Tinajeros, Malabon City, PH</p>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Education</h2>
+        <p><strong>BS in Information Technology</strong><br>
+        FEU Institute of Technology, 2024 - 2028</p>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Graphic Design</li>
+            <li>Git and GitHub</li>
+        </ul>
+
+        <h2>References</h2>
+        <p>Available upon request.</p>
+    </div>
+</body>
+</html>
